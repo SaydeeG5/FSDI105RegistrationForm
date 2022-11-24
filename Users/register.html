@@ -9,7 +9,8 @@
     <title>User Registration System </title>
 </head>
 <body>
-    <div class="container">
+
+<div class="container">
         <header>
             <h1>User Registration System</h1>
         </header>
@@ -20,11 +21,13 @@
                 </div>
                 <div>
                     <label> First Name:</label><br>
-                    <input type="text"  id="txtFirstName">
+                    <input type="text"  id="txtFirstName"> 
+                    <p class="error-msg">Your data is required. </p>
                 </div>
                 <div>
                     <label> Last Name:</label><br>
                     <input type="text"  id="txtLastName">
+                    <p class="error-msg">Your data is required.</p>
                 </div>
                 <div>
                     <label> Age:</label><br>
@@ -39,7 +42,7 @@
                     <input type="number"  id="txtPhone">
                 </div>
                 <div>
-                <label> Payment: </label>
+                <label> Payment: </label><br>
                 <select id="selPayment">
                     <option value=""selected disabled>---Select a Payment Method---</option>
                     <option value="Pay Pal">Pay Pal</option>
@@ -55,7 +58,35 @@
     <div class="center-btn">
     <button id="btnSave" class="btn btn-secondary">SAVE USER</button>
     </div>
+
+    <div id="pnlSuccess" class="ok-alert">
+        <p>User SAVED correctly!</p>
+    </div>
+</div>
+
+
     
+    <table class="table" id="table-user">
+        <tr class="table-head">
+            <th>First Name:</th>
+            <th>Last Name:</th>
+            <th>Age:</th>
+            <th>Gender:</th>
+            <th>Payment:</th>
+            <th>Color:</th>
+        </tr>
+        
+        <tbody>
+            <!-- copied and pasted this to register.js
+            <tr>
+                <td>Saydee</td>
+                <td>Guevarra</td>
+                <td>39</td>
+                <td>Teal</td>
+                
+            </tr> -->
+        </tbody>
+    </table>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="./scripts/storage.js"></script>
     <script src="./scripts/register.js"></script>

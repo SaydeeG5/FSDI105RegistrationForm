@@ -34,14 +34,25 @@ h1 {
     font-weight: 200;
     font-size: 30px;
 }
+
 .register-form { 
     display: grid;
     grid-template-rows: auto;
     grid-gap: 10px;
     width: 50%;
-    margin-left: 162px;
-    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
     color: #fff;
+    text-align:center;
+}
+
+input { 
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+    display: block;
+    text-align: right;
 }
 
 h4 { 
@@ -61,6 +72,38 @@ h4 {
     margin-right: auto;
     margin-top: 25px;
     margin-bottom: 25px;
-    
 }
 
+.ok-alert {
+    display: none;
+}
+
+.ok-alert p {
+    border: 3px solid green;
+    padding: 10px; 
+    text-align: center;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    width: 45%;
+}
+
+.table { 
+    color: #fff;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.inputInfo:nth-child(odd) {
+    background-color: #3C4048;
+    color: #fff;
+}
+
+p { 
+    display: none;
+}
